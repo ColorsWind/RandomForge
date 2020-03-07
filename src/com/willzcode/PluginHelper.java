@@ -59,7 +59,6 @@ public class PluginHelper {
 
     public static void printConfigFormat(Object object) {
         for (Field field : object.getClass().getDeclaredFields()) {
-            String key = humpToLine2(field.getName());
             switch (field.getType().getName().hashCode()) {
                 case 104431://int
                     System.out.println(humpToLine2(field.getName()) + ": 0");
